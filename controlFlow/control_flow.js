@@ -49,3 +49,24 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+// Dietary Services Starts
+
+let user = "man";
+let service;
+
+if (user === "employee") {
+    service = "Allow to use Dietary Services but no one-on-one interaction with a dietician";
+} else if (user === "enrolled-member") {
+    service = "Allow to use Dietary Services and one-on-one interaction with a dietician";
+} else if (user === "subscriber") {
+    service = "Allow to use Dietary Services but partial access";
+} else if (user === "non-subscriber") {
+    service = "Please enroll or at least subscribe first to avail this facility";
+} else {
+    service = "Please select a role";
+}
+
+console.log(service);
+
+// Dietary Services Ends
